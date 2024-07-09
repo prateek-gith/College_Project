@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEP Doorstep Delight Login</title>
+    <script src="https://kit.fontawesome.com/5e0592d44c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='Css/login.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="{{url_for('static', filename='Css/About_Css_1.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="Login_Container">
+        <div class="Form_Box">
+            <h1>SEP Doorstep Delight Registration</h1>
+            <form action="/login" method="post">
+                <div class="Input_Area">
+                    <div class="Input_Type">
+                        <label for="user_name"><i class="fa-solid fa-user"></i>
+                        </label>
+                            <input type="text" name="user_name" id="user_name" placeholder="Name">
+                    </div>
+
+                    <div class="Input_Type">
+                        <label for="User_Num"><i class="fa-solid fa-mobile"></i>
+                        </label>
+                            <input type="tel" name="User_Num" id="User_Num" placeholder="Phone Number">
+                    </div>
+
+                    <div class="Input_Type">
+                        <label for="User_Email"><i class="fa-solid fa-envelope-circle-check"></i> 
+                        </label>
+                            <input type="email" name="User_Email" id="User_Email" placeholder="Email Id">
+                    </div>
+
+                    <div class="Input_Type">
+                        <label for="Create_Pass"><i class="fa-solid fa-key"></i>
+                        </label>
+                            <input type="text" name="Create_Pass" id="Create_Pass" placeholder="Password">
+                    </div>
+
+                    <div class="Input_Type">
+                        <label for="Confirm_Pass"><i class="fa-solid fa-lock"></i>
+                        </label>
+                            <input type="password" name="Confirm_Pass" id="Confirm_Pass" placeholder="Confirm Password">
+                    </div>
+                </div>
+
+                <div class="btn_Fld">
+                    <button type="submit" onclick="alert('!! Welcome To SEP  !! \n Please Login !!'),window.open('/')">Create Account</button>
+                    <button type="reset" onclick="alert('Reset All Detail')">Reset</button>
+                </div>
+
+                <p style="color: wheat; font-size: 20px;">Already have an account ?<a href="/">  Click Here</a></p>
+            </form>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEP Doorstep Delight Login</title>
+    <script src="https://kit.fontawesome.com/5e0592d44c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='Css/login.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="{{url_for('static', filename='Css/About_Css_1.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="Login_Container">
+        <div class="Form_Box">
+            <h1>SEP Doorstep Delight Login</h1>
+            <form action="/" method="post">
+                <div class="Input_Area">
+
+                    <div class="Input_Type" style="margin: 10;">
+                        <label for="User_Email"><i class="fa-solid fa-envelope-circle-check"></i> 
+                        </label>
+                            <input type="email" name="User_Email" id="User_Email" placeholder="Your Email-Id">
+                    </div>
+
+                    <div class="Input_Type" style="margin: 10;">
+                        <label for="Create_Pass"><i class="fa-solid fa-key"></i>
+                        </label>
+                            <input type="text" name="Create_Pass" id="Create_Pass" placeholder=" Password">
+                    </div>
+                </div>
+
+                <div class="btn_Fld" style="justify-content: center;">
+                    <button type="submit" >Login</button>
+                </div>
+                
+                <p style="color: wheat; font-size: 18px;"><a href="#">Forget Password</a></p>
+                <p style="color: wheat; font-size: 20px;">Don't have an Account? <a href="/login">Click Here</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

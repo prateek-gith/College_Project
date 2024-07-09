@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="{{url_for('static', filename='Img/chole.jpg') }}">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="{{url_for('static', filename='Img/juice.jpeg') }}" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="{{url_for('static', filename='Img/sweet dish.webp') }}">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="{{url_for('static', filename='Img/chciken curry.webp') }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>SEP Doorstep Delight</h1>
+                        <p class="mb-4">SEP Doorstep Delight was founded in 2018 by SEP Group. The Group was created by 3 friends, Mr. Prateek Yadav, Mohd. Sameer Saifi and Ms. Erum Nawaz who later founded SEP Doorstep Delight.</p>
+                        <p class="mb-4">Today in this hectic life, its hard for the people living alone for the studies, for work or the old people to have a proper and healthy meal whole day.For such people we have introduced this platform where the person can be our member and select the plan accordingly, even they can customize the particular menu with other option available by informing us one day prior. There is an option for the one who don't want to take long term membership but want to be our guest for one day or more. Both the facility is just one call away or book the order online</p>
+                        <p class="mb-4">There is an option for the one who don't want to take our long term membership but want to be our guest for one day or more. Both the facility is just one call away or book the order online which is available 24*7 raedy to serve your next meal . We provide you with the facility of online payment as well as Cash On Delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Know About The Creators</h5>
+                    <h1 class="mb-5">The Founders</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded ">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="{{url_for('static', filename='Img/prateek2.jpg')}}" alt="">
+                            </div>
+                            <h5 class="mb-0">Mr. Prateek Yadav</h5>
+                            <small>Head of Developing Department</small>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="{{url_for('static', filename='Img/erum1.jpg') }}" alt="">
+                            </div>
+                            <h5 class="mb-0">Ms. Erum Nawaz</h5>
+                            <small>Head of Research & Finance Department</small>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item text-center ">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="{{url_for('static', filename='Img/sameer.jpg') }}" alt="">
+                            </div>
+                            <h5 class="mb-0">Mohd. Sameer Saifi</h5>
+                            <small>Head of Marketing Department</small>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+
+        <!-- Footer Start -->
+        
+
+
+{% endblock %}

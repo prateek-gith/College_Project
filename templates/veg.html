@@ -1,0 +1,386 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Veg Food Menu</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill"
+                                href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Popular</small>
+                                    <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
+                                href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                   <small class="text-body">Special</small> 
+                                    <h6 class="mt-n1 mb-0">Lunch</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill"
+                                href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Lovely</small> 
+                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/chla Bhatura.jpeg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chola Bhatura</span>
+                                                <span class="text-primary">₹100</span>
+                                            </h5>
+                                            <small class="fst-italic">Chola Bhatura</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Aloo_Paratha.jpeg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Aalo Paratha</span>
+                                                <span class="text-primary">₹70</span>
+                                            </h5>
+                                            <small class="fst-italic">Aalo Paratha</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Poori_Bhaji.jpeg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Poori Bhaji</span>
+                                                <span class="text-primary">₹70</span>
+                                            </h5>
+                                            <small class="fst-italic">Poori Bhaji</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Dhokla.jpeg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Dhokla</span>
+                                                <span class="text-primary">₹50</span>
+                                            </h5>
+                                            <small class="fst-italic">Dhokla</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Pav_Bhaji.jpeg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Pav Bhaji</span>
+                                                <span class="text-primary">₹115</span>
+                                            </h5>
+                                            <small class="fst-italic">Pav Bhaji</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Poha.jpeg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Poha</span>
+                                                <span class="text-primary">₹60</span>
+                                            </h5>
+                                            <small class="fst-italic">Poha</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Bread_Tost.jpeg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Bread Tost</span>
+                                                <span class="text-primary">₹115</span>
+                                            </h5>
+                                            <small class="fst-italic">Bread Tost</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Upmma.jpeg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Upmma</span>
+                                                <span class="text-primary">₹70</span>
+                                            </h5>
+                                            <small class="fst-italic">pmma</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/kadhi-chawal.jpg') }}" alt=""
+                                        style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Kadhi-Chawal</span>
+                                                <span class="text-primary">₹50</span>
+                                            </h5>
+                                            <small class="fst-italic">IKadhi Pakodi, Rice, and Salad</small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/kofta-lunch-.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Kofta-Lunch</span>
+                                                <span class="text-primary">₹50</span>
+                                            </h5>
+                                            <small class="fst-italic">Parathas, Bottle Gourd/Lauki Kofta Curry, Curd, Dal Fry, Steamed Rice, Green Salad, Karele, and pickled ginger</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/lunch-ideas.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Panchmel Dal</span>
+                                                <span class="text-primary">₹115</span>
+                                            </h5>
+                                            <small class="fst-italic">Panchmel Dal, Parathas, Curd, Khatta Meetha Kaddu, Bhindi, and Fruits.</small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/lunch-plate-1.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chola Masala</span>
+                                                <span class="text-primary">₹115</span>
+                                            </h5>
+                                            <small class="fst-italic">Chole Masala, Parathas, Curd, Ridge gourd dry sabji, Sprouts salad, and lemon pickle.</small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/lunch-plate.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Matar Paneer</span>
+                                                <span class="text-primary">₹115</span>
+                                            </h5>
+                                            <small class="fst-italic">Parathas, Chaach, Matar Paneer, Aloo french Beans, Green chutney, salad, and seasonal fruits.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/paneer-bhurji-parantha.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Paneer Bhurji and Parathas</span>
+                                                <span class="text-primary">₹115</span>
+                                            </h5>
+                                            <small class="fst-italic">Paneer Bhurji and Parathas</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/rajma-chawal.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Rajma-Chawal</span>
+                                                <span class="text-primary">₹115</span>
+                                            </h5>
+                                            <small class="fst-italic">Rajma Masala, Steamed rice, Pickled ginger, Cucumber onion, and tomato Kachumber salad, and mint chutney.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/tikki-chole.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Tikki-Chole</span>
+                                                <span class="text-primary">₹115</span>
+                                            </h5>
+                                            <small class="fst-italic">Aloo Tikki topped up with a generous quantity of chole, Green Chutney, Tamarind chutney, and chopped onions, tomatoes, and green chilies.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/dal-chawal.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Dal-Chawal</span>
+                                                <span class="text-primary">₹120</span>
+                                            </h5>
+                                            <small class="fst-italic">Steamed Rice, Panchmel Dal, Dry potato capsicum sabzi, Chaach, gobi Gajar Shalgam achaar, Onions, and Mango.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Paneer-Makhani.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Paneer Makhani</span>
+                                                <span class="text-primary">₹150</span>
+                                            </h5>
+                                            <small class="fst-italic">Paneer Makhani, Roti, curd, Masala Onion, and Mix veg Pulav.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Roti Chawal.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Roti Chawal</span>
+                                                <span class="text-primary">₹110</span>
+                                            </h5>
+                                            <small class="fst-italic">Roti, Curd, panchmel dal, Jeera Aloo, salad, Rice and achaar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Ridge Gourd Sabji.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ridge Gourd Sabji</span>
+                                                <span class="text-primary">₹100</span>
+                                            </h5>
+                                            <small class="fst-italic">Ridge Gourd Sabji, Paneer Jalfrezi, Roti, Karele ki sabji and curd</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Khatta Meetha pumpkin.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Khatta Meetha pumpkin</span>
+                                                <span class="text-primary">₹120</span>
+                                            </h5>
+                                            <small class="fst-italic">Poori, Paneer Butter Masala, Boondi Raita, Khatta Meetha pumpkin, Rasedar aloo ki sabzi, and fruits.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Palak Paneer.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Palak Paneer</span>
+                                                <span class="text-primary">₹150</span>
+                                            </h5>
+                                            <small class="fst-italic">Bhindi Pyaz, Curd, Palak Paneer, fruit, salad, and Roti.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/Masoor Dal.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Masoor Dal</span>
+                                                <span class="text-primary">₹120</span>
+                                            </h5>
+                                            <small class="fst-italic">Roti, Masoor Dal, Paneer Makhani, Potato Stir fry, Boondi Raita, and cucumber.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="{{url_for('static', filename='Img/kofta-lunch-.jpg') }}" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Lauki Kofta Curry</span>
+                                                <span class="text-primary">₹160</span>
+                                            </h5>
+                                            <small class="fst-italic">Parathas, Bottle Gourd/Lauki Kofta Curry, Curd, Dal Fry, Steamed Rice, Green Salad, Karele, and pickled ginger</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Start -->
+        {% endblock %}

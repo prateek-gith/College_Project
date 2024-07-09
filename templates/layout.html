@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SEP Doorstep Delight </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <script src="https://kit.fontawesome.com/5e0592d44c.js" crossorigin="anonymous"></script>
+<!--
+    <link rel="icon" href="img/SEP_Doorstep_Delight_transparent.png" type="image/icon type">
+-->
+<link rel="icon" href="{{url_for('static', filename='img/SEP_Doorstep_Delight.png') }}" type="image/png">
+
+    <!-- Favicon 
+    <link href="img/favicon.ico" rel="icon">
+    -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="{{url_for('static', filename='Css/About_Css_1.css') }}" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="{{url_for('static', filename='Css/Style_2.css') }}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{url_for('static', filename='Css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{url_for('static', filename='Css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{url_for('static', filename='Css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{url_for('static', filename='Css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='Css/Profile.css')}}">
+
+    <!-- Template Stylesheet -->
+    <link href="{{url_for('static', filename='Css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>SEP <Sub>Doorstep Delight</Sub></h1>
+                    <!--   <img src="img/SEP_Doorstep_Delight_transparent.png"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="/home" class="nav-item nav-link">Home</a>
+                        <a href="/about" class="nav-item nav-link">About</a>
+                        <a href="/service" class="nav-item nav-link">Service</a>
+                        <!-- <a href="booking.html" class="nav-item nav-link">Booking</a> -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Booking</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="/member" class="dropdown-item">Take Membership</a>
+                                <a href="/guest" class="dropdown-item">Be Our Guest</a>
+                                <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="/veg" class="dropdown-item">Veg</a>
+                                <a href="/Nonveg" class="dropdown-item">Non-veg</a>
+                                <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
+                            </div>
+                        </div>
+                        <a href="/contact" class="nav-item nav-link">Contact</a>
+                        <!--
+                        <a href="#" class="nav-item nav-link"><i class="fa-regular fa-circle-user"></i></a>
+                        -->
+                    </div>
+                    <!--
+                    -->
+                    <a href="/profile" class="nav-item nav-link"><i class="fa-regular fa-circle-user"></i> Profile</a>
+                </div>
+            </nav>
+
+            {% block body %} {% endblock %}
+
+            <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="container py-5">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                            <a class="btn btn-link" href="/home">Home</a>
+                            <a class="btn btn-link" href="/about">About Us</a>
+                            <a class="btn btn-link" href="/contact">Contact Us</a>
+                            <a class="btn btn-link" href="/service">Services</a>
+                            <!-- <a class="btn btn-link" href="">Terms & Condition</a> -->
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                             <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                             
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9956049122</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 6388389179</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 7398963863</p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>sepdoorstepdelight@gmail.com</p>
+                            <a href="{{params['fb_url']}}" target="_blank"><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Facebook</p> </a>
+                            
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Timing</h4>
+                            <h5 class="text-light fw-normal">For Booking</h5>
+                            <h5 class="text-light fw-normal">Sunday - Saturday</h5>
+                            <p>12:00 AM - 11:59 PM</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Location</h4>
+                            <ul>
+                                <li>Kakadeo, Kanpur.</li>
+                                <li>Priyadarshani Nagar, Unaao.</li>
+                                <li>Hazaratganj, Luncknow.</li>
+                                <li>Rajiv Chowk, New Delhi.</li>
+                                <li>Sector 62, Noida.</li>
+                                <li>Sector 18, Greater Noida.</li>
+                                <li>Golf Course Road, Gurgaon.</li>
+                                <li>Hebbal Kempapura, Banglore.</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; <a class="border-bottom" href="#">SEP Doorstep Delight</a>, All Right Reserved. 
+                                
+                                
+                                Designed By <a class="border-bottom" href="">SEP Group</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+    
+    
+            <!-- Back to Top -->
+            <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+        </div>
+    
+        <!-- JavaScript Libraries -->
+        <script src="{{url_for('static', filename='JavaScript/Java_Sc_1.js') }}"></script>
+        <script src="{{url_for('static', filename='JavaScript/Java_Sc_2.js') }}"></script>
+        <script src="{{url_for('static', filename='JavaScript/wow.min.js') }}"></script>
+        <script src="{{url_for('static', filename='JavaScript/easing.min.js') }}"></script>
+        <script src="{{url_for('static', filename='JavaScript/waypoints.min.js') }}"></script>
+        <script src="{{url_for('static', filename='JavaScript/counterup.min.js') }}"></script>
+        <script src="{{url_for('static', filename='JavaScript/owl.carousel.min.js') }}"></script>
+        <script src="{{url_for('static', filename='JavaScript/moment.min.js') }}"></script>
+        <script src="{{url_for('static', filename='JavaScript/moment-timezone.min.js') }}"></script>
+        <script src="{{url_for('static', filename='JavaScript/tempusdominus-bootstrap-4.min.js') }}"></script>
+    
+        <!-- Template Javascript -->
+        <script src="{{url_for('static', filename='JavaScript/main.js') }}"></script> 
+    </body>
+    
+    </html>

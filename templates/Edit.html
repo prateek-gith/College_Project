@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Profile update</h1>
+    </div>
+</div>
+<div>
+    <form action="/edit/{{post.L_E_Mail}}" method="POST">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" value="{{post.L_Name}}">
+                    <label for="name">Your Name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email" value={{post.L_E_Mail}}>
+                    <label for="email">Your Email</label>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="Phone_Number" placeholder="Phone_Number" name="Phone_Number" value={{post.L_Phone_Number}}>
+                    <label for="Phone_Number">Phone Number</label>
+                </div>
+            </div>
+            {% if  post_2 %}
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="Address" placeholder="Address" name="Address" value="{{post_2.M_Address}}">
+                    <label for="Address">Address</label>
+                </div>
+            </div>
+            {% endif %}
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <button class="btn btn-primary w-100 py-3"><a href="/profile" style="color: white;">Back To Profile</a></button>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary w-100 py-3" type="submit">Update</button>
+            </div>  
+        </div>
+    </form>
+</div>
+
+{% endblock %}

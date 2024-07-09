@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Be Our Guest</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s"
+            style="background-image: url(/static/Img/food.jpg); background-size: cover;">
+            <div class="row g-0" style="justify-content: right;">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                        <h1 class="text-white mb-4">Book Your Meal With Us</h1>
+                        <form action="/guest" method="post">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" name='Name'>
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" name='EMail'>
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="date" placeholder="Select date" name='Date_Time'>
+                                        <label for="date">Booking Date</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="plates" class="form-control" id="plates" placeholder="Plates" name='No_Plate' >
+                                        <label for="plates">Number of Plates</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1" name='Type'>
+                                            <option value="1">Breakfast</option>
+                                            <option value="2">Lunch</option>
+                                            <option value="2">Dinner</option>
+                                        </select>
+                                        <label for="select1">Meal Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="Special_Request" placeholder="Special_Request" name='Request'>
+                                        <label for="Special_Request">Special_Request</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Start -->
+        {% endblock %}

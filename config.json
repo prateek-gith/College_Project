@@ -1,0 +1,11 @@
+{
+    "params":
+    {
+        "local_server" : "True",
+        "local_uri" : "mysql://root:Password@localhost/sep",
+        "pro_uri" : "mysql://root:Password@localhost/sep",
+        "fb_url":"https://facebook.com/Your_Facebook_Id",
+        "gmail_user" : "Your_Gmail_Id",
+        "gmail_pass" : "Your_Gmail_Id_Password/Activate_Key"
+    }
+}

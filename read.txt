@@ -1,0 +1,26 @@
+# from flask.ext.sqlalchemy import SQLAlchemy
+# render_template It  Is Use To Templet Which Is Created In Templet Folder
+# app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql://username:password@localhost/db_name'
+
+# db.init_app(app )
+
+
+# 'mysql://username:password@localhost/db_name' ==> is is a URI of my sql
+# SQLALCHEMY_DATABASE_URI ==> mtlb kon ssa database use kr rahe h or kaise connect hona chahte h database se
+# S_No 	Name 	E_Mail 	Date_Time 	People 	Request
+
+# SUbject = db.Column(db.String(100), unique=True, nullable=False) unique=True If Coulumn Is Unique nullable=False It Mean It Is Can't Null
+
+    
+# this is end point It mean When We Run Our Site In The server Or Local Server Then We
+# Use '/' It Mean Fornt Page 
+# Like This We Creat End Point
+
+
+
+
+
+config.joson
+
+
+#274d5a

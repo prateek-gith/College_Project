@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Take Our Membership</h1>
+                    <!-- <h1 class="display-3 text-white mb-3 animated slideInDown" style="font-size: 20px;">Be As A Guest</h1> -->
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <div class="cointainer-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s"
+            style="background-image: url(/static/Img/food.jpg); background-size: cover;">
+            <div class="row g-0" style="justify-content: right;">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Membership</h5>
+                        <h1 class="text-white mb-4">Be Our Member</h1>
+                        <form action="/member" method="post">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="date" name="date" placeholder="Select date">
+                                        <label for="date">Membership Start Date</label>
+                                    </div>
+                                </div>
+                               <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1" name="select1">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="3">4</option>
+                                            <option value="3">5</option>
+                                            <option value="3">6</option>
+                                            <option value="3">7</option>
+                                            <option value="3">8</option>
+                                            <option value="3">9</option>
+                                            <option value="3">10</option>
+                                            <option value="3">11</option>
+                                            <option value="3">12</option>
+                                        </select>
+                                        <label for="select1">No Of Months</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="address" placeholder="Address" name="address">
+                                        <label for="address">Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="city" placeholder="City" name="city">
+                                        <label for="city">City</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="state" placeholder="State" name="state">
+                                        <label for="state">State</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input class="form-control" id="pincode" placeholder="Pincode" name="pincode">
+                                        <label for="pincode">Pincode</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select2" name="select2">
+                                            <option value="1">Veg</option>
+                                            <option value="2">Non-veg</option>
+                                        </select>
+                                        <label for="select1">Menu Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                                        <label for="phone">Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Take Membership</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
+<script>
+    const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+     utilsScript:
+       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+</script>

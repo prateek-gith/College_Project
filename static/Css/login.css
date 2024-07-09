@@ -1,0 +1,95 @@
+body{
+    /* background-color: black; */
+    font-family: "Nunito",sans-serif;
+    background-image: url(/static/Img/food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size :contain; */
+}
+
+.Form_Box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    /* display: flex; */
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    /* justify-content:left; */
+    background-color: rgb(216, 236, 236);
+    background-color: rgba(24, 24, 23, 0.73);
+    padding: 10px 60px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.Form_Box h1{
+    font-size: 40px;
+    color: wheat;
+    margin-bottom: 60px;
+    /* color: orangered; */
+    position: relative;
+}
+
+.Form_Box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background : black;
+    position:absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Input_Type{
+    background : white;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    /* border: 2px solid black; */
+    border : 0;
+    outline: 0;
+    padding: 10px 15px;
+    /* align-items: center; */
+    margin-left: 15px;
+    border-radius: 2px;
+}
+
+i{
+    margin-left: 15px;
+}
+
+form p a {
+    text-decoration: none;
+}
+
+.btn_Fld {
+    width: 100%;
+    display: flex;
+    justify-content :space-between;
+}
+
+.btn_Fld button {
+    flex-basis: 48%;
+    background: black;
+    color: rgb(195, 218, 223);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn_Fld button.btn_dbl{
+    background: rgb(63, 63, 63);
+    color:rgb(195, 218, 223);
+}

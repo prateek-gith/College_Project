@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Profile</h1>
+                </div>
+            </div>
+
+        <!-- Contact Start -->
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="main">
+                    <div class="card">
+                        <div class="card-body">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>:</td>
+                                        <td>{{user_data.L_Name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>:</td>
+                                        <td>{{user_data.L_E_Mail}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number</td>
+                                        <td>:</td>
+                                        <td>{{user_data.L_Phone_Number}}</td>
+                                    </tr>
+
+                                    <!--
+                                    -->
+                                    {% if User2_Data %}
+                                    <tr>
+                                        <td>MemberShip Start Date</td>
+                                        <td>:</td>
+                                        <td>{{User2_Data.M_Start_Date}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Months Of Membership</td>
+                                        <td>:</td>
+                                        <td>{{User2_Data.M_No_Months}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td>:</td>
+                                        <td>{{User2_Data.M_Address}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CIty</td>
+                                        <td>:</td>
+                                        <td>{{User2_Data.M_CIty}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>State</td>
+                                        <td>:</td>
+                                        <td>{{User2_Data.M_State}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Pin Code</td>
+                                        <td>:</td>
+                                        <td>{{User2_Data.M_Pin_Code}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Membership Type</td>
+                                        <td>:</td>
+                                        <td>{{User2_Data.M_Menu_Type}}</td>
+                                    </tr>
+                                    {% endif %}
+                                </tbody>
+                            </table>
+                            <div style="display:flex;justify-content: space-around;" >
+                            <div class="col-md-3">
+                                <div class="form-floating">
+                                    <td><a href="/edit/{{user_data.L_E_Mail}}"><button class="btn btn-primary w-100 py-3">Edit</button></a></td>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-floating">
+                                    <td><a href="#"><button class="btn btn-primary w-100 py-3">Delete</button></a></td>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-floating">
+                                    <td><a href="/logout"><button class="btn btn-primary w-100 py-3">LogOut</button></a></td>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        {% endblock %}
